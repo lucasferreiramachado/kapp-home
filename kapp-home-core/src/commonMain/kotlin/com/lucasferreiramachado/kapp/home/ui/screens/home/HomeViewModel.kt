@@ -13,7 +13,6 @@ class  HomeViewModel(
 ) : ViewModel() {
     private val _state = MutableStateFlow(initialState)
     val state: StateFlow<HomeUiState> = _state.asStateFlow()
-
     
     fun onEvent(event: HomeUiEvent) {
         when (event) {
