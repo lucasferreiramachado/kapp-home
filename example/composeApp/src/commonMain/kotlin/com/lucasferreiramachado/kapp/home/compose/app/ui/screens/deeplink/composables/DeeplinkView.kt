@@ -16,6 +16,18 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.lucasferreiramachado.kapp.home.compose.app.ui.screens.deeplink.DeeplinkUiEvent
 import com.lucasferreiramachado.kapp.home.compose.app.ui.screens.deeplink.DeeplinkUiState
+import org.jetbrains.compose.ui.tooling.preview.Preview
+
+@Composable
+@Preview
+fun DeeplinkScreenPreview(
+    state: DeeplinkUiState = DeeplinkUiState(
+        deeplinkUri = "DEEPLINK URI"
+    ),
+    events: List<DeeplinkUiEvent> = emptyList()
+) {
+    previewDeeplinkScreen(state, events)
+}
 
 @Composable
 fun DeeplinkView(

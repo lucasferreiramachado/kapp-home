@@ -3,15 +3,10 @@ package com.lucasferreiramachado.kapp.home.coordinator
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.NavUri
-import androidx.navigation.compose.composable
-import androidx.navigation.toRoute
 import com.lucasferreiramachado.kapp.deeplink.builder.LoginDeeplinkBuilder
 import com.lucasferreiramachado.kapp.deeplink.builder.ProductListDeeplinkBuilder
 import com.lucasferreiramachado.kapp.home.navigation.HomeNavigationRoute
 import com.lucasferreiramachado.kapp.home.navigation.homeNavigation
-import com.lucasferreiramachado.kapp.home.ui.screens.home.HomeUiState
-import com.lucasferreiramachado.kapp.home.ui.screens.home.HomeViewModel
-import com.lucasferreiramachado.kapp.home.ui.screens.home.composables.HomeScreen
 import com.lucasferreiramachado.kcoordinator.KCoordinator
 import com.lucasferreiramachado.kcoordinator.compose.ComposeKCoordinator
 
