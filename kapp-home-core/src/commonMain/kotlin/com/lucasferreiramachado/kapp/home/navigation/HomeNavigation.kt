@@ -17,8 +17,10 @@ fun NavGraphBuilder.homeNavigation(
         val initialState = HomeUiState(
             username = route.username
         )
-        val viewModel = HomeViewModel(initialState)
-        viewModel.coordinator = coordinator
+        val viewModel = HomeViewModel(
+            initialState,
+            coordinator
+        )
         HomeScreen(viewModel)
     }
 }

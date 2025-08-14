@@ -8,11 +8,12 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 class  HomeViewModel(
-    initialState: HomeUiState = HomeUiState()
+    initialState: HomeUiState = HomeUiState(),
+    var coordinator: KCoordinator<HomeCoordinatorAction>? = null
 ) : ViewModel() {
     private val _state = MutableStateFlow(initialState)
     val state: StateFlow<HomeUiState> = _state.asStateFlow()
-    var coordinator: KCoordinator<HomeCoordinatorAction>? = null
+
     
     fun onEvent(event: HomeUiEvent) {
         when (event) {
