@@ -85,11 +85,17 @@ kotlin {
 
             implementation(libs.kapp.deeplink)
             implementation(libs.kapp.data.user)
+
+            implementation(libs.koin.compose.viewmodel.nav)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
     }
+}
+
+dependencies {
+    debugImplementation(compose.uiTooling)
 }
 
 android {
