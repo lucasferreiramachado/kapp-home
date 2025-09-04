@@ -106,7 +106,7 @@ fun HomeView(
             }
         }
 
-        Text(text = "KApp Compose Sample",
+        Text(text = "KApp: Kotlin Multiplatform Multimodular App",
             modifier = Modifier.fillMaxWidth().padding(16.dp).align(Alignment.BottomCenter),
             textAlign = TextAlign.Center,
             fontSize = 14.sp,
