@@ -69,6 +69,7 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.koin.android)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -85,9 +86,11 @@ kotlin {
             implementation(libs.kcoordinator)
             implementation(libs.kcoordinator.navigation.compose)
             implementation(project(":kapp-home-core"))
+            // or use   implementation("io.github.lucasferreiramachado:kapp-home:1.1.0")
             implementation(libs.kapp.auth)
             implementation(libs.kapp.deeplink)
             implementation(libs.kapp.data.user)
+            implementation(libs.koin.compose.viewmodel.nav)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

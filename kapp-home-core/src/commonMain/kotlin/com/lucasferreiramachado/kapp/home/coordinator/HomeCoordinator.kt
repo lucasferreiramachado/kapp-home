@@ -10,9 +10,8 @@ import com.lucasferreiramachado.kapp.home.navigation.homeNavigation
 import com.lucasferreiramachado.kcoordinator.KCoordinator
 import com.lucasferreiramachado.kcoordinator.compose.ComposeKCoordinator
 
-class HomeCoordinator(
-    val factory: HomeCoordinatorFactoryI,
-    override val parent: KCoordinator<*>
+open class HomeCoordinator(
+    override val parent: KCoordinator<*>,
 ) : ComposeKCoordinator<HomeCoordinatorAction> {
 
     private var navHostController: NavHostController? = null
@@ -43,6 +42,6 @@ class HomeCoordinator(
         navHostController: NavHostController
     ) {
         this.navHostController = navHostController
-        navGraphBuilder.homeNavigation(this)
+        navGraphBuilder.homeNavigation()
     }
 }
